@@ -70,8 +70,8 @@ feature_names = [str(name) for name in os.getenv('MODEL_FEATURES').split(',')]
 
 
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def predict():
+    return 'Predict'
 
 class InvalidUsageError(Exception):
     pass
